@@ -1,0 +1,28 @@
+.searchForm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; // Centruoja paieškos juostą
+}
+
+.searchInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.searchButton {
+    padding: 10px 15px;
+    background-color: #8284fb;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #4ea8de;
+    }
+}

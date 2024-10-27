@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centruoja turinį horizontaliai
+    padding: 20px;
+}
+
+.title {
+    text-align: center; // Centruoja tekstą
+    margin-bottom: 20px; // Atstumas nuo paslaugų kortelių
+}
+
+.serviceContainer {
+    display: flex;
+    justify-content: center; // Centro paslaugų korteles
+    gap: 20px; // Atstumas tarp kortelių
+}
