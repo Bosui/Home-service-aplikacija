@@ -1,23 +1,81 @@
 .cardContainer {
     display: flex;
-    /* Rikiuoja elementus eilėje */
-    justify-content: space-between;
-    /* Tarpas tarp kortelių */
     flex-wrap: wrap;
-    /* Jei nepakanka vietos, elementai keliasi į kitą eilutę */
-    border-radius: 45px;
-    /* Užapvalinti kampai */
-    overflow: hidden;
-    /* Paslėpti turinį, jei jis viršija konteinerio ribas */
+    justify-content: space-between;
+    gap: 20px; // Tarpai tarp kortelių
+}
+
+.card {
+    width: 550px; // Nustatytas plotis
+    border-radius: 15px; // Apvalinti kampai
+    overflow: hidden; // Paslėpti perteklių
+    transition: transform 0.3s; // Animacija
+    cursor: pointer; // Rodyti rodyklę
+}
+
+.card:hover {
+    transform: scale(1.05); // Priartinimas su pelės užvedimu
 }
 
 .cardImage {
-    width: 450px;
-    /* Nustatykite plotį 350px */
-    height: auto;
-    /* Aukštis automatiškai pritaikomas pagal pločio aspektą */
-    object-fit: cover;
-    /* Užtikrina, kad vaizdai būtų gerai pritaikyti */
-    margin: 10px;
-    /* Tarpas tarp kortelių */
+    width: 100%; // Vaizdų plotis
+    height: auto; // Automatinis aukštis
+}
+
+.infoContainer {
+    padding: 20px; // Tarpas viduje
+    background-color: #f9f9f9; // Šviesi fono spalva
+    height: 100%; // Užimti visą kortelės aukštį
+    text-align: left; // Teksto lygiavimas į kairę
+}
+
+.chip {
+    display: inline-block;
+    background-color: #8056eb; // Chip fono spalva
+    padding: 5px 10px; // Chip užpildymas
+    border-radius: 15px; // Apvalinti chip kampai
+    margin-bottom: 10px; // Tarpas po chip
+}
+
+.name {
+    font-weight: bold; // Stiprus pavadinimas
+    margin: 10px 0; // Tarpas
+}
+
+.contactPerson,
+.address {
+    margin: 5px 0; // Tarpas
+}
+
+.button {
+    background-color: #5b24e7; // Mėlyna mygtuko spalva
+    color: #e5ddfb; // Teksto spalva
+    border: none; // Nėra kraštinės
+    padding: 10px 15px; // Užpildymas
+    border-radius: 5px; // Apvalinti kampai
+    cursor: pointer; // Rodyti rodyklę
+    transition: background-color 0.3s; // Animacija
+}
+
+.button:hover {
+    background-color: #0056b3; // Tamsesnė mėlyna pelės užvedimui
+}
+
+.cardTitle {
+    // Pridėta klasė, kad būtų galima nustatyti h3 stilių
+    color: black; // Juoda spalva
+    font-family: Roboto, sans-serif; // Šrifto nustatymai
+    font-size: 1.17em; // Šrifto dydis
+    font-weight: bold; // Stiprus pavadinimas
+    margin: 0.67em 0; // Maržos nustatymas
+}
+.contactPerson {
+    // Pridėta klasė, kad būtų galima nustatyti h3 stilių
+    color: #8056eb; // Juoda spalva
+    font-family: Roboto, sans-serif; // Šrifto nustatymai
+}
+.address {
+    // Pridėta klasė, kad būtų galima nustatyti h3 stilių
+    color: #a8a8a8; // Juoda spalva
+    font-family: Roboto, sans-serif; // Šrifto nustatymai
 }
