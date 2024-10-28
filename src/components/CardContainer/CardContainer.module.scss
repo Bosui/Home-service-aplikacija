@@ -1,12 +1,16 @@
 .cardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; // Tarpai tarp kortelių
+    display: flex; // Naudojame flexbox
+    flex-wrap: wrap; // Leiskite kortelėms perkelti į naują eilutę
+    justify-content: space-between; // Tarpai tarp kortelių
+    width: 100%; // Užima visą plotį
+    padding: 20px; // Vidaus atstumas
+    box-sizing: border-box; // Įtraukti padding į bendrą plotį
+    margin-bottom: 20px; // Pridėkite tarpus tarp šio konteinerio ir kito
 }
 
 .card {
-    width: 550px; // Nustatytas plotis
+    flex: 1 1 100px; // Leiskite kortelėms augti ir mažėti, pradedant nuo 300px
+    max-width: 370px; // Nustatykite maksimalų plotį
     border-radius: 15px; // Apvalinti kampai
     overflow: hidden; // Paslėpti perteklių
     transition: transform 0.3s; // Animacija
@@ -17,6 +21,9 @@
     transform: scale(1.05); // Priartinimas su pelės užvedimu
 }
 
+.container {
+    margin-bottom: 20px; // Tarpas tarp skirtingų konteinerių
+}
 .cardImage {
     width: 100%; // Vaizdų plotis
     height: auto; // Automatinis aukštis
@@ -78,4 +85,12 @@
     // Pridėta klasė, kad būtų galima nustatyti h3 stilių
     color: #a8a8a8; // Juoda spalva
     font-family: Roboto, sans-serif; // Šrifto nustatymai
+}
+.cardContainer {
+    display: flex; // Naudojame flexbox
+    flex-wrap: wrap; // Leiskite kortelėms perkelti į naują eilutę
+    justify-content: space-between; // Tarpai tarp kortelių
+    width: 100%; // Užima visą plotį
+    padding: 20px; // Vidaus atstumas
+    box-sizing: border-box; // Įtraukti padding į bendrą plotį
 }

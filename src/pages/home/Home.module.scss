@@ -1,0 +1,31 @@
+.homeContainer {
+    display: flex; // Naudojame flexbox
+    flex-direction: column; // Orientuojame elementus stulpeliu
+    align-items: center; // Centrins elementus horizontaliai
+    justify-content: center; // Centrins elementus vertikaliai
+    text-align: center; // Centrins tekstą
+    padding: 20px; // Vidaus atstumas
+    max-width: 1600px; // Padidintas maksimalus plotis
+    width: 100%; // Užima visą plotį
+    margin: 0 auto; // Centrins visą konteinerį
+}
+
+.title {
+    font-size: 2.5em; // Didinamas šrifto dydis
+    color: #333; // Tamsi spalva
+    margin-bottom: 20px; // Tarpas apačioje
+}
+
+.subtitle {
+    font-size: 1.5em; // Antraštės dydis
+    color: #555; // Šiek tiek šviesesnė spalva
+    margin-bottom: 20px; // Tarpas apačioje
+}
+
+.popularBusinesses {
+    margin: 20px 0; // Tarpas viršuje ir apačioje
+}
+
+.spanColor{
+    color: #8056eb;
+}

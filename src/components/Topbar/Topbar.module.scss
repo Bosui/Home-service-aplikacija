@@ -1,48 +1,83 @@
 .topbar {
     display: flex;
-    align-items: center; // Centracija vertikaliai
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #ffff
-    ;
+    background-color: #fff; // Background color
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Light shadow
 }
 
 .logo {
-    margin-right: 20px; // Atstumas tarp logotipo ir navigacijos
+    display: flex;
+    align-items: center;
+
+    img {
+            width: 100%; // Naudojame 100% pločio, kad būtų lankstus
+            min-width: 100px; // Minimalus plotis
+            max-width: 300px; // Maksimalus plotis
+            height: auto; // Išlaikyti proporcijas
+        }
+    h1 {
+        font-size: 1.5em;
+        color: #333;
+    }
 }
 
 .nav {
-    flex-grow: 1; // Tai leidžia navigacijai užimti visą likusią vietą
+    margin-right: auto; // Patraukiam į kairę
 
     ul {
         display: flex;
-        gap: 15px; // Atstumas tarp nuorodų
         list-style: none;
         padding: 0;
 
         li {
+            margin: 0 15px;
+
             a {
                 text-decoration: none;
-                color: #323232;
-                font-weight: bold;
+                color: #333;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #5b24e7; // Change color on hover
+                }
             }
         }
     }
 }
 
-.loginButtonContainer {
-    margin-left: auto; // Tai stumia login mygtuką į dešinę
-}
+.loginButtonContainer,
+.signUpButtonContainer {
+    // Pridedame signup konteinerį
+    display: flex;
+    align-items: center;
 
-.loginButton {
-    padding: 10px 15px;
-    background-color: #8284fb;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    .loginButton,
+    .signUpButton {
+        margin-left: 10px; // Space between buttons
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
 
-    &:hover {
-        background-color: #4ea8de;
+        &.loginButton {
+            background-color: #5b24e7;
+            color: white;
+
+            &:hover {
+                background-color: #947ece;
+            }
+        }
+
+        &.signUpButton {
+            background-color: #ffb400; // Different color for Sign Up
+            color: white;
+
+            &:hover {
+                background-color: #e0a400; // Change on hover
+            }
+        }
     }
 }

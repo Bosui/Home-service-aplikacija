@@ -1,12 +1,13 @@
 .searchBar {
-display: flex;
-    align-items: center;
+    display: flex;
+    align-items: center; // Centruoti elementus vertikaliai
     border-radius: 20px; // Apvalūs kampai
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Šešėlis
     background-color: #f5f5f5; // Šviesus fonas
     padding: 10px; // Vidaus atstumas
-    width: 100%; // Pasirinkite reikiamą plotį, pvz., 100% arba nustatykite konkrečią reikšmę
-    max-width: 600px; // Pavyzdžiui, galite nustatyti maksimalų plotį
+    width: 100%; // Pasirinkite reikiamą plotį
+    max-width: 600px; // Maksimalus plotis
+    margin: 0 auto; // Centruoti paieškos juostą horizontaliai
 }
 
 .searchInput {
@@ -27,6 +28,6 @@ display: flex;
     transition: background-color 0.3s; // Perėjimo efektas
 
     &:hover {
-        background-color: #947ece; // Šiek tiek tamsesnė spalva, kai pelė užvedama
+        background-color: #7a5bbf; // Tamsesnė spalva, kai pelė užvedama
     }
 }

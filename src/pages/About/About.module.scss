@@ -1,0 +1,36 @@
+.aboutContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f5f5f5; // Šviesiai pilkas fonas
+    border-radius: 10px; // Apvalūs kampai
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Šešėlis
+}
+
+.title {
+    font-size: 2.5em; // Didinamas šrifto dydis
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; // Teksto centravimas
+}
+
+h2 {
+    color: #272525;
+    margin-top: 20px;
+    font-size: 1.8em; // Didinamas h2 dydis
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444; // Tamsesnė pilka spalva, kad būtų geresnis kontrastas
+}
+
+a {
+    color: #5b24e7;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

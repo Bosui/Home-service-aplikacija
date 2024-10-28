@@ -1,25 +1,31 @@
 import React from 'react';
-import styles from './App.module.scss';
-import CardContainer from './components/CardContainer/CardContainer';
-import Container from './components/Container/Container';
-import SearchBar from './components/SearchBar/SearchBar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Topbar from './components/Topbar/Topbar';
+import About from './pages/About/About';
+import Home from './pages/home/Home';
+import Login from './pages/Login/Login';
+import Services from './pages/services/Services';
+import SignUp from './pages/SignUp/SignUp';
 
 const App = () => {
   return (
-    <div>
-      <Topbar />
-      <main className={styles.main}>
-        <h1 className={styles.title}>Find Home Service/Repair Near You</h1>
-        <h2 className={styles.subtitle}>Explore Best Home Service & Repair near you</h2>
-        <SearchBar />
-        <Container /> 
-        <p className={styles.popularBusinesses}>Popular businesses</p>
-        <div>
-          <CardContainer />
-        </div>
-      </main>
-    </div>
+    <Router>
+      <div>
+        <Topbar />
+        <main >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/login" element={<Login />} /> 
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
+        </main>
+      </div>
+      <div>
+        {/* Papildomas turinys, jei reikia */}
+      </div>
+    </Router>
   );
 };
 
