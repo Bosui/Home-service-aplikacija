@@ -1,0 +1,23 @@
+.cardContainer {
+    display: flex;
+    /* Rikiuoja elementus eilėje */
+    justify-content: space-between;
+    /* Tarpas tarp kortelių */
+    flex-wrap: wrap;
+    /* Jei nepakanka vietos, elementai keliasi į kitą eilutę */
+    border-radius: 45px;
+    /* Užapvalinti kampai */
+    overflow: hidden;
+    /* Paslėpti turinį, jei jis viršija konteinerio ribas */
+}
+
+.cardImage {
+    width: 450px;
+    /* Nustatykite plotį 350px */
+    height: auto;
+    /* Aukštis automatiškai pritaikomas pagal pločio aspektą */
+    object-fit: cover;
+    /* Užtikrina, kad vaizdai būtų gerai pritaikyti */
+    margin: 10px;
+    /* Tarpas tarp kortelių */
+}
