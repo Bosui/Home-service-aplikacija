@@ -1,0 +1,7 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap; // Leiskite kortelėms apvynioti
+    justify-content: space-around; // Paskirstykite korteles
+    gap: 20px; // Atstumas tarp kortelių
+    padding: 20px; // Padedama vidinė erdvė
+}

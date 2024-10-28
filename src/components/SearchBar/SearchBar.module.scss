@@ -1,28 +1,32 @@
-.searchForm {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto; // Centruoja paieškos juostą
+.searchBar {
+display: flex;
+    align-items: center;
+    border-radius: 20px; // Apvalūs kampai
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Šešėlis
+    background-color: #f5f5f5; // Šviesus fonas
+    padding: 10px; // Vidaus atstumas
+    width: 100%; // Pasirinkite reikiamą plotį, pvz., 100% arba nustatykite konkrečią reikšmę
+    max-width: 600px; // Pavyzdžiui, galite nustatyti maksimalų plotį
 }
 
 .searchInput {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
+    border: none; // Nenaudokite ribų
+    outline: none; // Nenaudokite ryškios ribos
+    flex: 1; // Leiskite įvedimo laukui užimti visą erdvę
+    padding: 10px; // Vidaus atstumas
+    border-radius: 20px; // Apvalūs kampai
 }
 
 .searchButton {
-    padding: 10px 15px;
-    background-color: #8284fb;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #947ece; // Pasirinkite tinkamą spalvą
+    color: white; // Teksto spalva
+    border: none; // Nenaudokite ribų
+    border-radius: 20px; // Apvalūs kampai
+    padding: 10px 20px; // Vidaus atstumas
+    cursor: pointer; // Rodyti, kad tai paspaudžiamas elementas
+    transition: background-color 0.3s; // Perėjimo efektas
 
     &:hover {
-        background-color: #4ea8de;
+        background-color: #947ece; // Šiek tiek tamsesnė spalva, kai pelė užvedama
     }
 }

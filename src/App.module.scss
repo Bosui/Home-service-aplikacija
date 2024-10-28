@@ -3,15 +3,64 @@
     flex-direction: column;
     align-items: center; // Centruoja turinį horizontaliai
     padding: 20px;
+    margin-top: 20px; // Atstumas nuo viršaus
+    background-color: #f9f9f9; // Pavyzdinė fono spalva
+    border-radius: 10px; // Apvalūs kampai
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Šešėlis
 }
 
 .title {
-    text-align: center; // Centruoja tekstą
-    margin-bottom: 20px; // Atstumas nuo paslaugų kortelių
+    text-align: center;
+    font-family: 'Roboto', sans-serif; // Pavyzdys - naudokite pageidaujamą šriftą
+    font-size: 2.5rem; // Arba kitas dydis, pagal pavyzdį
+    font-weight: bold; // Arba kitas svoris, jei reikia
+    color: #4A90E2; // Pakeiskite spalvą, kad atitiktų pavyzdį
+    margin: 20px 0; // Atstumas viršuje ir apačioje
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; // Tas pats šriftas
+    font-size: 1.5rem; // Arba kitas dydis, pagal pavyzdį
+    color: #7F8C8D; // Subtili spalva
+    margin-bottom: 30px; // Atstumas žemyn
 }
 
 .serviceContainer {
     display: flex;
     justify-content: center; // Centro paslaugų korteles
+    align-items: flex-start; // Centruoja visus elementus viršuje
     gap: 20px; // Atstumas tarp kortelių
+}
+.serviceRepair {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; // Pasirinkite šriftą
+    font-size: 2rem; // Priklausomai nuo pavyzdžio
+    font-weight: bold; // Arba kitas svoris, kaip reikia
+    color: #4A90E2; // Spalva, kaip pageidaujate
+    margin: 10px 0; // Atstumas viršuje ir apačioje
+}
+.header {
+    text-align: center; // Centruoja tekstą
+    margin-bottom: 20px; // Atstumas tarp antraštės ir paieškos juostos
+}
+
+.title {
+    font-size: 2.5rem; // Didesnis šrifto dydis
+    font-weight: bold; // Storas šriftas
+    color: #333; // Tamsiai pilka spalva
+    margin: 0; // Nustato margines 0
+}
+
+.serviceRepair {
+    font-size: 1.5rem; // Šiek tiek mažesnis dydis
+    color: #555; // Šviesiai pilka spalva
+    margin: 5px 0; // Atstumas viršuje ir apačioje
+}
+.popularBusinesses {
+    font-size: 1.5rem; // Nustato šrifto dydį
+    color: #333; // Tamsiai pilka spalva
+    text-align: left; // Centruoja tekstą
+    margin: 20px 0; // Atstumas viršuje ir apačioje
+    width: 100%; // Nustato plotį kaip 100%
 }

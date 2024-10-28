@@ -1,25 +1,19 @@
 import React from 'react';
-import { FaBroom, FaWrench } from 'react-icons/fa'; // Pridėk savo ikonų biblioteką
-import styles from './App.module.scss'; // Importuojame stilius
-import SearchBar from './components/SearchBar/SearchBar'; // Pridėkite SearchBar komponentą
-import ServiceCard from './components/ServiceCard/ServiceCard';
+import styles from './App.module.scss';
+import Container from './components/Container/Container';
+import SearchBar from './components/SearchBar/SearchBar';
 import Topbar from './components/Topbar/Topbar';
-
 
 const App = () => {
   return (
     <div>
       <Topbar />
       <main className={styles.main}>
-        <h1 className={styles.title}>Find Home Service/Repair
-          Near You</h1>
-        <h2>Explore Best Home Service & Repair near you</h2>
-        <SearchBar /> {/* Perkelkite paieškos juostą čia */}
-        <div className={styles.serviceContainer}>
-          <ServiceCard title="Valymas" icon={<FaBroom />} />
-          <ServiceCard title="Remontas" icon={<FaWrench />} />
-          {/* Pridėk daugiau paslaugų kortelių, jei reikia */}
-        </div>
+        <h1 className={styles.title}>Find Home Service/Repair Near You</h1>
+        <h2 className={styles.subtitle}>Explore Best Home Service & Repair near you</h2>
+        <SearchBar />
+        <Container /> 
+        <p className={styles.popularBusinesses}>Popular businesses</p>
       </main>
     </div>
   );
